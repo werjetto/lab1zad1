@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+	float a, r, pinum, s1,s2;
+	pinum = 3.14;
+	printf("Input number a,r\n");
+	scanf("%g", &a);
+	scanf("%g", &r);
+	s1 = a * a;
+	s2 = pinum * r * r;
+	{
+		if (s1 > s2)
+			printf("The circle will fit into a square\nBut the square will not fit into the circle\n");
+		else if (s2 > s1)
+			printf("The circle will not fit in the square\nBut the square will fit in the circle\n");
+		else
+			printf("Incorrect input");
+	}
+	return 0; 
+}
